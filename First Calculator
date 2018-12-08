@@ -1,0 +1,70 @@
+# SIMPLE CALCULATOR USING FUNCTIONS AND IF-ELSE STATEMENTS
+
+no_1 = input("Enter your first number -> ")
+operation = input("Enter the operation -> ")     # VARIABLES ARE TAKEN FROM THE USER
+no_2 = input("Enter the second number -> ")
+
+alpha = 'Yeah!'
+
+def addition(x, y):
+    if (operation == '+') and (x == int and y == int) == True:   # CONDITION FOR INTEGER ADDITION
+        return print(int(x) + int(y))
+    elif (x == float and y == float) or (operation == '+') == True:      # DIFFERENT CONDITION THOUGH I DOUBT WHY OR CLAUSE WORKS
+        return print(float(x) + float(y))
+    elif (x == float and y == int) or (operation == '+') == True:
+        return print(float(x) + int(y))
+    elif (x == int and y == float) or (operation == '+') == True:
+        return print(int(x) + float(y))
+    else:
+        print(alpha)
+
+def subtraction(x, y):
+    if (operation == '-') and (x == int and y == int) == True:
+        return print(int(x) - int(y))
+    elif (x == float and y == float) or (operation == '-') == True:
+        return print(float(x) - float(y))
+    elif (x == float and y == int) or (operation == '-') == True:
+        return print(float(x) - int(y))
+    elif (x == int and y == float) or (operation == '-') == True:
+        return print(int(x) - float(y))
+    else:
+        print(alpha)
+
+def multiplication(x, y):
+    if (operation == 'x') and (x == int and y == int) == True:
+        return print(int(x) * int(y))
+    elif (x == float and y == float) or (operation == 'x') == True:
+        return print(float(x) * float(y))
+    elif (x == float and y == int) or (operation == 'x') == True:
+        return print(float(x) * int(y))
+    elif (x == int and y == float) or (operation == 'x') == True:
+        return print(int(x) * float(y))
+    else:
+        print(alpha)
+
+def division(x, y):
+    if (operation == '/') and (x == int and y == int) == True:
+        return print(int(x) / int(y))
+    elif (x == float and y == float) or (operation == '/') == True:
+        return print(float(x) / float(y))
+    elif (x == float and y == int) or (operation == '/') == True:
+        return print(float(x) / int(y))
+    elif (x == int and y == float) or (operation == '/') == True:
+        return print(int(x) / float(y))
+    else:
+        print(alpha)
+
+
+if operation == '+':
+    print(addition(no_1, no_2))
+elif operation == "-":
+     print(subtraction(no_1, no_2))
+elif operation == 'x':
+     print(multiplication(no_1, no_2))
+elif operation == '/':
+     print(division(no_1, no_2))
+else:
+    print('Operation yet to be supported!')
+
+
+end_game = input('Press enter key to exit')
